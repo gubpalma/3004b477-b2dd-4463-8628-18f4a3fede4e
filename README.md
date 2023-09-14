@@ -8,10 +8,17 @@
 
 ## Docker image
 * Can be found [here](https://hub.docker.com/repository/docker/gman82/sequence-find-api)
+* When running the image as a container, you can specify the port number to run the API on
 ![image](https://github.com/gubpalma/3004b477-b2dd-4463-8628-18f4a3fede4e/assets/19819334/eaa62f77-6e50-4348-8bea-aebe39a6cfff)
 
 ## Sending requests
 * As per the criteria, the request will consist of a single string of numbers, separated by whitespace
 * You can use an API diagnostic tool such as [Postman](https://www.postman.com/downloads/) to send a sample request
-* The request should be a simple HTTP POST of a JSON body with the string value set as the `data` JSON property
+* The request should be a simple HTTP POST of a JSON body with the string value set as the `data` JSON property, e.g:
+```
+{
+    "data": "1 2 3 1 2 3 4 5 1 2"
+}
+```
 ![image](https://github.com/gubpalma/3004b477-b2dd-4463-8628-18f4a3fede4e/assets/19819334/9760f1e2-88b3-441f-9bc3-809d400853e5)
+* The data response will be a JSON packet with either a `Result` or `Error` property
