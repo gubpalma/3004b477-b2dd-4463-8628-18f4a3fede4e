@@ -10,7 +10,8 @@ namespace Sequence.Finder.Host.Injection
         {
             services
                 .AddTransient<ISequenceParser, SequenceParser>()
-                .AddTransient<ISequenceFinder, SequenceFinder>();
+                .AddTransient<ISequenceFinder, SequenceFinder>()
+                .AddTransient<ISequenceManager, SequenceManager>();
 
             return
                 services;

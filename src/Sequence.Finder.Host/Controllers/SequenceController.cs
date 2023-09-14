@@ -1,3 +1,4 @@
+using System;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Sequence.Finder.Contracts;
@@ -20,14 +21,29 @@ namespace Sequence.Finder.Host.Controllers
             _logger = logger;
         }
 
-        [HttpGet]
-        public SequenceResponse Get([FromBody] SequenceRequest request)
+        [HttpPost]
+        public IActionResult Post([FromBody] SequenceRequest request)
         {
-            var result =
-                _sequenceManager
-                    .Handle(request);
+            try
+            {
+                var result =
+                    _sequenceManager
+                        .Handle(request);
 
-            return result;
+                return 
+                    new OkObjectResult(result);
+            }
+            catch (Exception ex)
+            {
+                var result =
+                    new SequenceResponse
+                    {
+                        Error = ex.Message
+                    };
+
+                return 
+                    new BadRequestObjectResult(result);
+            }
         }
     }
 }

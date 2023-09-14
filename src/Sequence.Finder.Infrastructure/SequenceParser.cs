@@ -9,12 +9,14 @@ namespace Sequence.Finder.Infrastructure
         
         public const string FormatErrorMessage = "Unexpected input format; expecting integers separated by whitespace";
 
-        public IEnumerable<int> Perform(string values)
+        public int[] Perform(string values)
         {
             var results = new List<int>();
 
-            if (string.IsNullOrEmpty(values)) 
-                return results;
+            if (string.IsNullOrEmpty(values))
+                return 
+                    results
+                        .ToArray();
 
             if (!new Regex(ValidationPattern).IsMatch(values))
                 throw new Exception("Unexpected input format; expecting integers separated by whitespace");
