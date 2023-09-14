@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Sequence.Finder.Contracts\Sequence.Finder.Contracts.csproj" />
+    <ProjectReference Include="..\Sequence.Finder.Infrastructure\Sequence.Finder.Infrastructure.csproj" />
     <ProjectReference Include="..\Sequence.Finder.Interfaces\Sequence.Finder.Interfaces.csproj" />
   </ItemGroup>
 

@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using Sequence.Finder.Infrastructure;
+using Sequence.Finder.Interfaces;
 
 namespace Sequence.Finder.Host.Injection
 {
@@ -6,7 +8,11 @@ namespace Sequence.Finder.Host.Injection
     {
         public static IServiceCollection AddPlatformServices(this IServiceCollection services)
         {
-            return services;
+            services
+                .AddTransient<ISequenceParser, SequenceParser>();
+
+            return
+                services;
         }
     }
 }

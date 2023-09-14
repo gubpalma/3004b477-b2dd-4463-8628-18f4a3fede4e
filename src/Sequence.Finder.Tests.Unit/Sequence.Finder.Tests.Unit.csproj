@@ -18,4 +18,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Sequence.Finder.Infrastructure\Sequence.Finder.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

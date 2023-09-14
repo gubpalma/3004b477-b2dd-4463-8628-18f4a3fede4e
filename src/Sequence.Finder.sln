@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sequence.Finder.Contracts",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sequence.Finder.Tests.Unit", "Sequence.Finder.Tests.Unit\Sequence.Finder.Tests.Unit.csproj", "{C0259696-8C49-4486-B400-2D01F2E70139}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sequence.Finder.Infrastructure", "Sequence.Finder.Infrastructure\Sequence.Finder.Infrastructure.csproj", "{4C317CF6-D3CA-4522-9417-5CF36EE8B950}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C0259696-8C49-4486-B400-2D01F2E70139}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0259696-8C49-4486-B400-2D01F2E70139}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0259696-8C49-4486-B400-2D01F2E70139}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C317CF6-D3CA-4522-9417-5CF36EE8B950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C317CF6-D3CA-4522-9417-5CF36EE8B950}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C317CF6-D3CA-4522-9417-5CF36EE8B950}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C317CF6-D3CA-4522-9417-5CF36EE8B950}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
