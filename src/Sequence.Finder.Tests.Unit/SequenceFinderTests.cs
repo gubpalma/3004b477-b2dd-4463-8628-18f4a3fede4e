@@ -82,7 +82,7 @@ namespace Sequence.Finder.Tests.Unit
                         .Join(' ', _results);
 
                 Assert
-                    .Equal(formattedResult, expectedResult);
+                    .Equal(expectedResult, formattedResult);
             }
         }
     }

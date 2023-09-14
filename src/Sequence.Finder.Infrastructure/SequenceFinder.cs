@@ -14,13 +14,22 @@ namespace Sequence.Finder.Infrastructure
 
             var currentSequence = new List<int>();
 
-            for (var i = 0; i < values.Count(); i++)
+            for (var i = 0; i < values.Length; i++)
             {
-                if (i == 0) 
+                if (i == 0)
+                {
+                    currentSequence
+                        .Add(values[i]);
+
                     continue;
+                }
 
                 if (values[i] > values[i - 1])
                 {
+                    if (!currentSequence.Any())
+                        currentSequence
+                            .Add(values[i - 1]);
+
                     currentSequence
                         .Add(values[i]);
 
