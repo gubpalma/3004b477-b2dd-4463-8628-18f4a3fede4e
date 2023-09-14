@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sequence.Finder.Contracts\Sequence.Finder.Contracts.csproj" />
+    <ProjectReference Include="..\Sequence.Finder.Interfaces\Sequence.Finder.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>
