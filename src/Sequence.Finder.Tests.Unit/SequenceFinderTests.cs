@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using Sequence.Finder.Infrastructure;
 using Xunit;
@@ -69,7 +70,7 @@ namespace Sequence.Finder.Tests.Unit
             public void ActPerformFind() =>
                 _results =
                     _sut
-                        .Perform(_values);
+                        .Perform(_values.ToArray());
 
             public void AssertExpectedValues(string expectedResult)
             {

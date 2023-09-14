@@ -4,6 +4,6 @@ namespace Sequence.Finder.Interfaces
 {
     public interface ISequenceFinder
     {
-        IEnumerable<int> Perform(IEnumerable<int> values);
+        IEnumerable<int> Perform(int[] values);
     }
 }
