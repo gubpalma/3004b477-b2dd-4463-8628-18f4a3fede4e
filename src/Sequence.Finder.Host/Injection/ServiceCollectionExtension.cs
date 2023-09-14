@@ -9,7 +9,8 @@ namespace Sequence.Finder.Host.Injection
         public static IServiceCollection AddPlatformServices(this IServiceCollection services)
         {
             services
-                .AddTransient<ISequenceParser, SequenceParser>();
+                .AddTransient<ISequenceParser, SequenceParser>()
+                .AddTransient<ISequenceFinder, SequenceFinder>();
 
             return
                 services;

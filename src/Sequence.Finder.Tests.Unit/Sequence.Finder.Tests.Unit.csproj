@@ -22,4 +22,10 @@
     <ProjectReference Include="..\Sequence.Finder.Infrastructure\Sequence.Finder.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Resource\TEST_CASE_1.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
