@@ -4,7 +4,7 @@
 * .NET Core 6.0 
 * Open in Visual Studio and set the startup project to `Sequence.Finder.Host`, then run
 * Altenratively use the `dotnet run` command
-* Hosted on port 5279
+* ~~Hosted on port 5279~~ 
 
 ## Docker image
 * Can be found [here](https://hub.docker.com/repository/docker/gman82/sequence-find-api)
